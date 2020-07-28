@@ -6,7 +6,7 @@ Serviços
 
 Empresa <br/>
 GET <br/>
-Params Required: page:number, pageSize:number <br/>
+Params Required{ page:number, pageSize:number }<br/>
 http://127.0.0.1:8080/company <br/>
  <br/>
 POST <br/>
@@ -34,11 +34,11 @@ http://127.0.0.1:8080/company/id_company
 #
 Notas
 GET <br/>
-Params Required: page:number, pageSize:number <br/>
+Params Required{ page:number, pageSize:number }<br/>
 http://127.0.0.1:8080/note <br/><br/>
 
 GET <br/>
-Params Required: provider:number, page:number, pageSize:number <br/>
+Params Required{ provider:number, page:number, pageSize:number }<br/>
 http://127.0.0.1:8080/note/provider <br/><br/>
 
 POST <br/>
