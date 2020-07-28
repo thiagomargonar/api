@@ -16,20 +16,16 @@ public class Company implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(nullable = false)
+    @Column(nullable = false, unique = true)
     private String company_name;
 
     private String fantasy_name;
 
-    @Column(nullable = false)
+    @Column(nullable = false, unique = true)
     private String CNPJ;
 
     @Column(nullable = false)
     @Enumerated(value = EnumType.STRING)
     private TypeEnum typeEnum;
-
-    @OneToMany(cascade = CascadeType.ALL)
-    @JsonIgnore
-    List<Note> notes;
 
 }

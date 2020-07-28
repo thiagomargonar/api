@@ -18,17 +18,17 @@ public class Note implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(nullable = false)
-    private Long number;
+    @Column(nullable = false, unique = true)
+    private BigDecimal number;
 
-    @ManyToOne(optional = true, cascade = CascadeType.ALL)
+    @ManyToOne(optional = true, cascade = CascadeType.DETACH)
     private Company taker;
 
-    @ManyToOne(optional = true, cascade = CascadeType.ALL)
+    @ManyToOne(optional = true, cascade = CascadeType.DETACH)
     private Company provider;
 
     @Column(nullable = false)
-    @DateTimeFormat(pattern="dd/MM/yyyy")
+    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE, pattern = "dd/MM/yyyy")
     private Date date;
 
     @Column(nullable = false)
