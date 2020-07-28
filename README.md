@@ -4,7 +4,7 @@ Configurações do banco no arquivo application.properties e liquiabse.propertie
 
 Serviços
 
-Empresa
+Empresa <br/>
 GET <br/>
 Params Required: page:number, pageSize:number <br/>
 http://127.0.0.1:8080/company <br/>
