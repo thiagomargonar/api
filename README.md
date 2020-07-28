@@ -2,9 +2,9 @@
 Java 8, Spring Boot, Lombok, Liquibase, banco de dados MySQL 7  <br/>
 Configurações do banco no arquivo application.properties e liquiabse.properties <br/>
 
-##Serviços
+Serviços
 
-###Empresa
+Empresa
 GET <br/>
 Params Required: page:number, pageSize:number <br/>
 http://127.0.0.1:8080/company <br/>
@@ -32,7 +32,7 @@ http://127.0.0.1:8080/company <br/>
 DELETE  <br/>
 http://127.0.0.1:8080/company/id_company
 #
-###Notas
+Notas
 GET <br/>
 Params Required: page:number, pageSize:number <br/>
 http://127.0.0.1:8080/note <br/><br/>
