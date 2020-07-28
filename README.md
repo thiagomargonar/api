@@ -1,9 +1,8 @@
 # api
 Java 8, Spring Boot, Lombok, Liquibase, banco de dados MySQL 7  <br/>
-Schema:Azul  <br/>
-Porta:32769
+Configurações do banco no arquivo application.properties e liquiabse.properties <br/>
 
-##
+##Serviços
 
 ###Empresa
 GET <br/>
@@ -31,8 +30,8 @@ http://127.0.0.1:8080/company <br/>
 } <br/>
 
 DELETE  <br/>
-http://127.0.0.1:8080/company/id_company <br/><br/>
-
+http://127.0.0.1:8080/company/id_company
+#
 ###Notas
 GET <br/>
 Params Required: page:number, pageSize:number <br/>
