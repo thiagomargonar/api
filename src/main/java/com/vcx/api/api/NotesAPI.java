@@ -26,7 +26,7 @@ public class NotesAPI implements Serializable {
     }
 
     @GetMapping(path = "/provider")
-    public ResponseEntity<?> noteByCompany(Long provider ,@RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "15") int pageSize) {
+    public ResponseEntity<?> noteByCompany(@RequestParam Long provider ,@RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "15") int pageSize) {
         return new ResponseEntity<>(noteService.notesByCopmany(provider, PageRequest.of(page, pageSize)), HttpStatus.OK);
     }
 
